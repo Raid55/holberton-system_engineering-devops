@@ -4,6 +4,6 @@
 #outputed if it finds certain data type at a certain offset...pretty cool tbh
 #
 #Offset  Type       String in this case  what to output
-0       string      HOLBERTON       Holberton
+0       string      HOLBERTON       Holberton data
 # Adding the mime...because cant be french without a mime... ALLER LES BLEU!!!!!!!
 !:mime Holberton
