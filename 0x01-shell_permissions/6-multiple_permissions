@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod ug+x,o+r 9-John_Doe
+chmod ug+x,o+r hello
