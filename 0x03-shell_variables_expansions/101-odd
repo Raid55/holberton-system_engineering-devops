@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -e [1369]
+grep -n "" | grep -e [13579] | cut -d: -f2
