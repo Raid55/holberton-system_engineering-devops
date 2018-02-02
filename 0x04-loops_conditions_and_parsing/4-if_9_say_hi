@@ -2,7 +2,7 @@
 # This script is displaying "Holberton School" or hi
 i=0
 while [ $i -lt 10 ]; do
-    if [ $i -eq 7]; then
+    if [ $i -eq 7 ]; then
         echo "Hi"
     else
         echo "Holberton School"
