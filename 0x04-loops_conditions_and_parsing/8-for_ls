@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# prints all file in dir without starting number
+for file in *; do
+    echo "$file" | cut -d- -f2
+done
