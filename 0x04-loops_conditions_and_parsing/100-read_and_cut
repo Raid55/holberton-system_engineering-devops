@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # reading and cutting
 while read l; do
-  echo $l | cut -d: -f1,3,6
+  echo "$l" | cut -d: -f1,3,6
 done < /etc/passwd
