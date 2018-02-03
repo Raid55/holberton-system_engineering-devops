@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying number and bad luck
-i=0
+i=1
 while [ $i -lt 21 ]; do
     echo $i
     case $i in
