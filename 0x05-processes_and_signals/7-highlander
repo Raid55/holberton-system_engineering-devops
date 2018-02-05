@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#loops infinity and beyond and traps sigterm
 trap "echo I am invincible!!!" SIGTERM
 while true; do
     echo "To infinity and beyond"
