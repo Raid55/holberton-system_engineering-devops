@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#prints all process in user friendly format AXU
+ps axu
