@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 #new nginx server with default index
 sudo apt-get -y install nginx
-# new_str='54.242.127.159;\n'
-# pttrn='localhost;/s/localhost;'
 sed -i "0,/localhost;/s/localhost;/54.242.127.159;\n/" /etc/nginx/sites-available/default
 echo "Holberton School" > /usr/share/nginx/html/index.html
 sudo service nginx restart
