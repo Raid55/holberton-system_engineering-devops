@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # sets up new serv with 404 config
 sudo apt-get -y install nginx
-sed -i "0,/localhost;/s/localhost;/54.242.127.159;\n/" /etc/nginx/sites-available/default
+# sed -i "0,/localhost;/s/localhost;/54.242.127.159;\n/" /etc/nginx/sites-available/default
 sed -i "s/#error_page 401/error_page 401/" /etc/nginx/sites-available/default
 touch /usr/share/nginx/html/404.html
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
