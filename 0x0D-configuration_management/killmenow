@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+    echo 'yo'
+    sleep 10
+done
