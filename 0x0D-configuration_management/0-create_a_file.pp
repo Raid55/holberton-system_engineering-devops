@@ -1,3 +1,4 @@
+# creates file
 file { '/tmp/holberton':
     path    => '/tmp/holberton',
     content => 'I love Puppet',
