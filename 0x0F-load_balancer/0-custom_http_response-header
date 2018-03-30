@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# sets up new serv with 404 config
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo sed -i "23i\tadd_header X-Served-By $HOSTNAME;\n/" /etc/nginx/sites-available/default
+sudo sed -i "23i\tadd_header X-Served-By $HOSTNAME;\n/" /etc/nginx/sites-enabled/default
+sudo service nginx restart
