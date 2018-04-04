@@ -7,5 +7,5 @@ if [ $# -eq 1 ]; then
     host -a "web-01.$1" | awk '{if(/^web-01./) print "The subdomain web-01 is A", $4, "record and points to", $5}'
     host -a "web-02.$1" | awk '{if(/^web-02./) print "The subdomain web-02 is A", $4, "record and points to", $5}'
 elif [ $# -eq 2 ]; then
-    host -a "$2.$1" | awk -v subdo="$2" '{if(/^subdo./) print "The subdomain www is a", $4, "record and points to", $5}'
+    host -a "$2.$1" | awk -v subdo="$2" '{if(/^subdo./) print "The subdomain www is A", $4, "record and points to", $5}'
 fi
