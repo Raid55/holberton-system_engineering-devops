@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-mysqldump -u root -p$1 --opt ~/holberton > ~/backup.sql
+mysqldump -u root -p$1 --opt holberton > backup.sql
 TIME=$(date +%d-%m-%Y)
-tar -czvfP ~/$TIME.tar.gz ~/backup.sql
+tar -czvfP $TIME.tar.gz backup.sql
