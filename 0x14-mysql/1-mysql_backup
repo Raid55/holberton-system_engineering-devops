@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# dumps mysql and zips it
 mysqldump -u root -p$1 --opt holberton > backup.sql
 TIME=$(date +%d-%m-%Y)
 tar -czvfP $TIME.tar.gz backup.sql
