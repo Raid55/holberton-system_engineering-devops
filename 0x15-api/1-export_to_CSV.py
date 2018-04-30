@@ -7,7 +7,7 @@ import csv
 
 def main(id):
     """ does api request to get info and exports it"""
-    
+
     baseUrl = "https://jsonplaceholder.typicode.com/"
 
     user = requests.get(baseUrl + "users/{}".format(id)).json()
@@ -17,7 +17,7 @@ def main(id):
         wr = csv.writer(f, quoting=csv.QUOTE_ALL)
         for todo in todos:
             wr.writerow([id, user['name'], todo['completed'], todo['title']])
-    
+
 
 if __name__ == "__main__":
     main(argv[1])
